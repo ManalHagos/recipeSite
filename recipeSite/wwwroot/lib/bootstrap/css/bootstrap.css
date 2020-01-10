@@ -1,0 +1,24 @@
+﻿#collage {
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.formContainer {
+    padding-top: 50px;
+}
+
+.formBox {
+    background: linear-gradient(#FDFDFE, #EBEEF3) repeat scroll 0 0 #F6F7F8;
+    border-color: #E9EAED;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    width: 488px;
+    text-align: center;
+    padding: 20px;
+}
+
+.body {
+    background-color: deepskyblue;
+
+}

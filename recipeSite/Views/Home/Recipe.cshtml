@@ -1,0 +1,40 @@
+﻿@model Recipe
+
+@{
+    ViewData["Title"] = "Recipe";
+    Layout = "_Layout";
+}
+
+<h2>@Model.RecipeName</h2>
+<div class=" row">
+
+
+    <div class=" column">
+        <h2>@Model.RecipeName's Ingredient</h2>
+        <h4>
+            @Model.Ingredients
+        </h4>
+
+        <a asp-action="ReviewRecipe" asp-route-id="@Model.ID">
+            Review Recipe
+        </a>
+
+    </div>
+</div>
+<br>
+<br />
+<br>
+<br />
+<div>
+    <form method="post" asp-route-id="@Model.ID" asp-action="Update" asp-controller="CRUD">
+
+        <button type="submit">Updating</button>
+
+
+    </form>
+    <br />
+    <br />
+    <form method="post" asp-route-id="@Model.ID" asp-controller="CRUD" asp-action="Delete">
+        <button type="submit">Deleting</button>
+    </form>
+</div>

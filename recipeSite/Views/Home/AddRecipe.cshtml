@@ -1,0 +1,26 @@
+﻿@model Recipe
+@{
+    ViewData["Title"] = "AddRecipe";
+    Layout = "_Layout";
+}
+
+<h2>Add Recipe</h2>
+<img alt="chif" class="auto-style1" height="230" src="~/Images/chif.jpg" width="280">
+<div id="producetop" class="row">
+    <div class="formBox">
+        <fieldset id="produce">
+            <form method="post" asp-action="AddRecipe">
+                
+
+                @await Html.PartialAsync("PartialView",Model)
+            </form>
+        </fieldset>
+    </div>
+</div>
+
+
+
+
+
+
+

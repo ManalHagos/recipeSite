@@ -1,0 +1,16 @@
+﻿@model Recipe
+
+<div>
+    <label>Please Fill the Form: </label>
+    @*<label asp-for="ID"></label>
+        <input asp-for="ID" />*@
+</div>
+<div><label asp-for="RecipeName">Recipe Name:</label> <input type="text" asp-for="RecipeName" /></div>
+<div><label asp-for="Ingredients">ingredients:</label> <input type="text" asp-for="Ingredients" /></div>
+<div><label>Suggestion:</label> <input type="text" name="geslacht" value="" /></div>
+<div><label>Directoin:</label> <input type="text" name="beschrijving" value="" /></div>
+<div>
+    <button type="submit">Save</button>
+
+    <input type="button" value="Cancel" onclick="window.location.href='/'" />
+</div>

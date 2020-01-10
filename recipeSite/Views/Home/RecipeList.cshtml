@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Recipe>
+@{
+    ViewData["Title"] = "RecipeList";
+    Layout = "_Layout";
+}
+
+<table>
+    <tbody>
+        @foreach (var recipe in Model)
+        {
+        <td>
+
+            <a asp-action="Recipe" asp-route-id="@recipe.ID">
+                <p>@recipe.RecipeName</p>
+                <img alt="@recipe.RecipeName" class="auto-style1" height="90" src="@recipe.image" width="160"
+                     style="float:right; margin-right: 10px; margin-bottom: 5px;" />
+            </a>
+        </td>
+    }
+        </tbody>
+    </table>
+
+    <br>
+    <br />
+    <br>
+    <br />
+    <br>
+    <br />
+    <br>
+    <br />
+    <br>
+    <br />
+    <br>
+    <br />
+    <br>
+    <br />
+
+    
+
+    <div>
+        <br> <hr style="border-style:solid;border-width:2px;border-color:black;" />
+
+    </div>
+
+

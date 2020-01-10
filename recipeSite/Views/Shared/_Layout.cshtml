@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <img alt="Centennial College" class="auto-style1" height="170" src="~/Images/Centennial College.png" width="220">
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" asp-action="RecipeList" asp-controller="Home">
+                    RecipeList
+                </a>
+            </li>
+            <li>
+                <a class="nav-link js-scroll-trigger" asp-action="Index" asp-controller="Home">
+                    Home
+                </a>
+
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" asp-action="AddRecipe" asp-controller="Home">
+                    AddRecipe
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
